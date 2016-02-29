@@ -70,6 +70,7 @@ body {
 p {
   padding-bottom: 1.44em; /* 28.8px / 20px */
 }
+
 h1 {
   color: #E6EBE0;
   font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
@@ -77,6 +78,7 @@ h1 {
   font-size: 100%;
   text-size-adjust: 100%;
 }
+
 h2 {
   color: #E6EBE0;
   font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
@@ -88,19 +90,59 @@ h2 {
   text-size-adjust: 100%;
 }
 
+h3 {
+  color: #E6EBE0;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  font-weight: bold;
+  font-size: 1.44em; /* 28.8px / 20px */
+  line-height: 1.728em; /* 34.56px / 20px */
+  padding-top: 0.864em; /* 1.728em / 2 */
+  text-size-adjust: 100%;
+}
+
+h4 {
+  color: #E6EBE0;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  font-weight: bold;
+  font-size: 1.44em; /* 28.8px / 20px */
+  line-height: 1.728em; /* 34.56px / 20px */
+  padding-top: 0em; /* Closer */
+  text-size-adjust: 100%;
+}
+
 img {
-  display: block; /* Images display inline by default */
-  max-width: 100%; /* Responsive images! Always be at most 100%
-                      the width of the containing element
-                      (<figure>, in this example's case) */
+  display: block; 
+  max-width: 100%; /* Responsive images*/
   padding-bottom: 1.4400000000000002em; /* 25.92px / 18px */
+}
+
+/* unvisited link */
+a:link {
+    color: #e05038;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #963019;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #f2cbbc;
+    text-decoration: underline
+}
+
+/* selected link */
+a:active {
+    color: #e05038;
+    text-decoration: underline
 }
 
 @media screen and (min-width: 33.333333333333336em) {
   figure1 {
-    position: relative; /* Give figure a positioning context
-                           to set up the position of figcaption
-                           below...*/
+    position: relative;
     img {
       width :50%;
     }
@@ -111,23 +153,18 @@ img {
     top: 40%;
     right: 5%;
     img {
-      width :100%;
-      
+      width :100%;  
     }
   }
 
   h1 {
     position: absolute;
     top: 60%;
-    right: 5%;
+    right: 5%;  
   }
-  h1 span {
-   letter-spacing: -1px;  
-   background: #000000; /* fallback color */
-   background: #040404;
 }
-  /* Flexbox-enabled styles below */
 
+  /* Flexbox-enabled styles below */
   .flexbox figure {
     position: static;
     display: flex;
@@ -142,5 +179,4 @@ img {
     width: auto;
     flex-basis: 45.454545454545%;
   }
-
 }
