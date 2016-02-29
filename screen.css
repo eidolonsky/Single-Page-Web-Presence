@@ -53,20 +53,33 @@ table {
   http://www.modularscale.com/?18&px&1.2&web&text
 */
 
+
 body {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 1.125em; /* 18px/16px = 1.125 */
-  line-height: 1.4400000000000002em; /* 25.92px / 18px */
-  padding-top: 1.4400000000000002em; /* 25.92px / 18px */
-  padding-left: 1.200em; /* 5:6 ratio on baseline */
-  padding-right: 0.600em; /* half the 5:6 ratio */
+  color: #E6EBE0;
+  background-color: #000000;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.2em; /* 19.2px / 16px */
+  line-height: 1.44em; /* 28.8px / 20px */
+  padding-top: 1.44em; /* 28.8px / 20px */
+  padding-left: 1.2em; /* 5:6 */
+  padding-right: 0.6em; /* 1/2 ratio */
+  padding-bottom: 1.44em; /* 28.8px / 20px */
+  text-size-adjust: 100%;
 }
 
-h2 {
-  font-size: 1.728em; /* 31.104px / 18px */
-  line-height: 1.6666666666666667em; /* 25.92 * 2 / 31.104 */
-  padding-top: 0.8333333333333334em; /* 25.92px / 31.104 */
-  padding-bottom: 1.6666666666666667em; /* 25.92 * 2 / 31.104 */
+p {
+  padding-bottom: 1.44em; /* 28.8px / 20px */
+}
+
+h1 {
+  color: #E6EBE0;
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.728em; /* 34.56px / 20px */
+  line-height: 1.6666666666667em; /* 28.8px * 2 / 34.56px */
+  padding-top: 0.8888888888883em; /* 28.8px / 34.56px */
+  padding-bottom: 0em; /* Closer */
+  text-size-adjust: 100%;
 }
 
 img {
@@ -84,12 +97,11 @@ img {
                            below...*/
   }
   img {
-     margin-left: 45.454545454545%; /* Push img out of figcaptions's way */
-     width: 54.545454545454%; /* Make the image 6/11's of the page */
+    width: auto;
   }
   figcaption {
     position: absolute; /* Position figcaption absolutely, -relative- to figure, above */
-    width: 45.454545454545%; /* Make the figcaption 5/11's of the page */
+ 
     top: 0; /* Put figcaption at the very top... */
     left: 0; /* ...and very left of figure */
   }
@@ -101,7 +113,7 @@ img {
     display: flex;
   }
   .flexbox img {
-    margin-left: 0;
+    
     width: auto;
     flex-basis: 54.545454545454%;
   }
