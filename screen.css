@@ -111,7 +111,7 @@ h4 {
 }
 
 img {
-  display: block; 
+  display: block;
   max-width: 100%; /* Responsive images*/
   padding-bottom: 1.4400000000000002em; /* 25.92px / 18px */
 }
@@ -149,34 +149,17 @@ a:active {
   }
 
   figure2 {
-    position: absolute; 
+    position: absolute;
     top: 40%;
     right: 5%;
     img {
-      width :100%;  
+      width :100%;
     }
   }
 
   h1 {
     position: absolute;
     top: 60%;
-    right: 5%;  
-  }
-}
-
-  /* Flexbox-enabled styles below */
-  .flexbox figure {
-    position: static;
-    display: flex;
-  }
-  .flexbox img {
-    margin-left: 0;
-    width: auto;
-    flex-basis: 54.545454545454%;
-  }
-  .flexbox figcaption {
-    position: static;
-    width: auto;
-    flex-basis: 45.454545454545%;
+    right: 5%;
   }
 }
