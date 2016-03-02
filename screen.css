@@ -71,7 +71,7 @@ p {
   padding-bottom: 1.44em; /* 28.8px / 20px */
 }
 
-h1 {
+.nametag {
   color: #E6EBE0;
   font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
   font-weight: bold;
@@ -79,9 +79,9 @@ h1 {
   text-size-adjust: 100%;
 }
 
-h2 {
+h1 {
   color: #E6EBE0;
-  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  font-family: "Goudy Bookletter 1911", sans-serif;
   font-weight: bold;
   font-size: 1.728em; /* 34.56px / 20px */
   line-height: 1.6666666666667em; /* 28.8px * 2 / 34.56px */
@@ -90,23 +90,13 @@ h2 {
   text-size-adjust: 100%;
 }
 
-h3 {
+h2 {
   color: #E6EBE0;
   font-family: "Goudy Bookletter 1911", sans-serif;
   font-weight: bold;
   font-size: 1.44em; /* 28.8px / 20px */
   line-height: 1.728em; /* 34.56px / 20px */
   padding-top: 0.864em; /* 1.728em / 2 */
-  text-size-adjust: 100%;
-}
-
-h4 {
-  color: #E6EBE0;
-  font-family: "Goudy Bookletter 1911", sans-serif;
-  font-weight: bold;
-  font-size: 1.44em; /* 28.8px / 20px */
-  line-height: 1.728em; /* 34.56px / 20px */
-  padding-top: 0em; /* Closer */
   text-size-adjust: 100%;
 }
 
@@ -157,7 +147,7 @@ a:active {
     }
   }
 
-  h1 {
+  .nametag {
     position: absolute;
     top: 60%;
     right: 5%;
