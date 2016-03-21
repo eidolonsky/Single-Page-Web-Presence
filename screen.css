@@ -52,7 +52,6 @@ body {
 p {
   padding-left: 1.2em; /* 5:6 */
   padding-right: 1.2em; /* 1/2 ratio */
-  padding-bottom: 1.44em; /* 28.8px / 20px */
 }
 
 h1 {
@@ -109,33 +108,47 @@ img {
 }
 
 @media screen and (min-width: 33.333333333333336em) {
-	.img1 {
-  	top: 70%;
-  	left: 80%;
-  	width: 135px;
+	.row1 {
+    background-color: blue;
+    height: 12em;
+  }
+  .portrait {
+    background-color: green;
+  }
+  .name {
+    background-color: yellow;
+  }
+  .img1 {
+  	width: 8.4em;
   	border-style: solid;
   	border-width: 7px;
   	border-radius: 50%;
 	}  
-
 	.img2 {
-  	width: 100%;
-  	z-index: -1;
-	}
-
-	figcaption {
-	  position: absolute;
-	  top: 98%;
-	  left: 80%;
-	  font-family: "Goudy Bookletter 1911", sans-serif;
-	  font-weight: bold;
-	  font-size: 1.5em;
-	  text-align: center;
+  	width: 30%;
+    max-width: 100%;
 	}
 
 /* Positioning
 	 Flexbox-enabled styles below */
-  
-
-
+  .row1 {
+    position: static;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end
+  }
+  .buttons {
+    background-color: pink;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+  }
+  .row2 {
+    background-color: white;
+    padding-top: 1.44em;
+    padding-right: 1.2em;
+    padding-bottom: 1.44em;
+    display: flex;
+    justify-content: space-around;
+  }
 }
