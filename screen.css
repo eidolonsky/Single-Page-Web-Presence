@@ -108,34 +108,32 @@ img {
   display: block;
 }
 
-.img1 {
-  top: 70%;
-  left: 80%;
-  width: 135px;
-  border-style: solid;
-  border-width: 7px;
-  border-radius: 50%;
-}  
-
-.img2 {
-  width: 100%;
-  width: 100%;
-  z-index: -1;
-}
-
-figcaption {
-  position: absolute;
-  top: 98%;
-  left: 80%;
-  font-family: "Goudy Bookletter 1911", sans-serif;
-  font-weight: bold;
-  font-size: 1.5em;
-  text-align: center;
-}
-
 @media screen and (min-width: 33.333333333333336em) {
-  
+	.img1 {
+  	top: 70%;
+  	left: 80%;
+  	width: 135px;
+  	border-style: solid;
+  	border-width: 7px;
+  	border-radius: 50%;
+	}  
+
+	.img2 {
+  	width: 100%;
+  	z-index: -1;
+	}
+
+	figcaption {
+	  position: absolute;
+	  top: 98%;
+	  left: 80%;
+	  font-family: "Goudy Bookletter 1911", sans-serif;
+	  font-weight: bold;
+	  font-size: 1.5em;
+	  text-align: center;
+	}
+
 /* Positioning
 	 Flexbox-enabled styles below */
 
-
+}
