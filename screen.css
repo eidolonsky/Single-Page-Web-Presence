@@ -13,9 +13,9 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
@@ -106,8 +106,6 @@ a:active {
     text-decoration: underline
 }
 
-@media screen and (min-width: 33.333333333333336em) {
-
 img {
   display: block;
 }
@@ -123,32 +121,26 @@ img {
   position: absolute;
   top: 70%;
   left: 80%;
-  width: 10%;
+  width: 135px;
   border-style: solid;
   border-width: 7px;
   border-radius: 50%;
 }  
 
-  /* Flexbox-enabled styles below */
-
-  .flexbox figure {
-    position: static;
-    display: flex;
-  }
-  .flexbox .images {
-    margin-left: 0;
-    width: auto;
-    flex-basis: 54.545454545454%;
-  }
-  .flexbox figcaption {
-    position: static;
-    width: auto;
-    flex-basis: 45.454545454545%;
-  }
-
-  .nametag {
-    position: absolute;
-    top: 60%;
-    right: 5%;
-  }
+figcaption {
+  position: absolute;
+  top: 98%;
+  left: 80%;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
 }
+
+@media screen and (min-width: 33.333333333333336em) {
+  
+
+
+/* Flexbox-enabled styles below */
+
+
