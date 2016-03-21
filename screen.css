@@ -41,8 +41,8 @@ table {
 /* Using Minor Third Modular Scale: http://www.modularscale.com/?18&px&1.2&web&text */
 /* text */
 body {
-  color: #E6EBE0;
-  background-color: #000000;
+  color: #000000;
+  background-color: #FFFFFF;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.2em; /* 19.2px / 16px */
   line-height: 1.44em; /* 28.8px / 20px */
@@ -56,7 +56,7 @@ p {
 }
 
 h1 {
-  color: #E6EBE0;
+  color: #000000;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.728em; /* 34.56px / 20px */
   line-height: 1.6666666666667em; /* 28.8px * 2 / 34.56px */
@@ -66,12 +66,18 @@ h1 {
 }
 
 h2 {
-  color: #E6EBE0;
+  color: #000000;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.44em; /* 28.8px / 20px */
   line-height: 1.728em; /* 34.56px / 20px */
   padding-left: 0.75em; 
   text-size-adjust: 100%;
+}
+
+h3 {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.2em; /* 19.2px / 16px */
+  line-height: 1.44em; /* 28.8px / 20px */
 }
 
 /* link setting */
@@ -103,7 +109,6 @@ a:active {
 img {
   display: block;
 }
-
 .img1 {
   width: 8.4em;
   border-style: solid;
@@ -130,11 +135,17 @@ img {
 }
 .name {
   font-size: 1.44em;
+  vertical-align: bottom;
 }
 .buttons {
+  font-size: 0.8em;
+  width: 33.3333333%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   margin-left: auto;
+  padding-top: 1.44em;
+  padding-bottom: 0.2em;
+  border-bottom: 0.1em solid #000000;
 }
 .row2 {
   padding-top: 1.44em;
@@ -199,10 +210,14 @@ img {
   }
   .name {
     font-size: 75%;
+    padding-top: 0.48em;
   }
   .buttons {
+    width: 100%;
     font-size: 50%;
     margin-right: auto;
+    display: flex;
+    justify-content: space-around;
   }
   .row2 {
     padding-top: 0em;
