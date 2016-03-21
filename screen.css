@@ -6,7 +6,7 @@
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {
 
 /* Base Style */	
-  margin: 0;
+	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -38,11 +38,8 @@ table {
 }
 
 /* Custom site styles */
-/*
-  Using Minor Third Modular Scale:
-  http://www.modularscale.com/?18&px&1.2&web&text
-*/
-
+/* Using Minor Third Modular Scale: http://www.modularscale.com/?18&px&1.2&web&text */
+/* text */
 body {
   color: #E6EBE0;
   background-color: #000000;
@@ -81,44 +78,37 @@ h2 {
   text-size-adjust: 100%;
 }
 
-/* link below*/
+/* link setting */
 /* unvisited link */
 a:link {
-    color: #e05038;
-    text-decoration: none;
+  color: #e05038;
+  text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: #963019;
-    text-decoration: none;
+  color: #963019;
+  text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-    color: #f2cbbc;
-    text-decoration: underline
+  color: #f2cbbc;
+  text-decoration: underline
 }
 
 /* selected link */
 a:active {
-    color: #e05038;
-    text-decoration: underline
+  color: #e05038;
+  text-decoration: underline
 }
 
+/* media */
 img {
   display: block;
 }
 
 .img1 {
-  width: 100%;
-  position: relative;
-  width: 100%;
-  z-index: -1;
-}
-
-.img2 {
-  position: absolute;
   top: 70%;
   left: 80%;
   width: 135px;
@@ -126,6 +116,12 @@ img {
   border-width: 7px;
   border-radius: 50%;
 }  
+
+.img2 {
+  width: 100%;
+  width: 100%;
+  z-index: -1;
+}
 
 figcaption {
   position: absolute;
@@ -139,8 +135,7 @@ figcaption {
 
 @media screen and (min-width: 33.333333333333336em) {
   
-
-
-/* Flexbox-enabled styles below */
+/* Positioning
+	 Flexbox-enabled styles below */
 
 
