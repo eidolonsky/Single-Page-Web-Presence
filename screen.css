@@ -52,6 +52,7 @@ body {
 p {
   padding-left: 1.2em; /* 5:6 */
   padding-right: 1.2em; /* 1/2 ratio */
+  padding-bottom: 1.44em;
 }
 
 h1 {
@@ -60,7 +61,6 @@ h1 {
   font-weight: bold;
   font-size: 1.728em; /* 34.56px / 20px */
   line-height: 1.6666666666667em; /* 28.8px * 2 / 34.56px */
-  padding-top: 0.8888888888883em; /* 28.8px / 34.56px */
   padding-bottom: 0em; /* Closer */
   padding-left: 0.75em; 
   text-size-adjust: 100%;
@@ -72,7 +72,6 @@ h2 {
   font-weight: bold;
   font-size: 1.44em; /* 28.8px / 20px */
   line-height: 1.728em; /* 34.56px / 20px */
-  padding-top: 0.864em; /* 1.728em / 2 */
   padding-left: 0.75em; 
   text-size-adjust: 100%;
 }
@@ -108,20 +107,10 @@ img {
 }
 
 @media screen and (min-width: 33.333333333333336em) {
-	.row1 {
-    background-color: blue;
-    height: 12em;
-  }
-  .portrait {
-    background-color: green;
-  }
-  .name {
-    background-color: yellow;
-  }
   .img1 {
   	width: 8.4em;
   	border-style: solid;
-  	border-width: 7px;
+  	border-width: 0.48em;
   	border-radius: 50%;
 	}  
 	.img2 {
@@ -131,39 +120,48 @@ img {
     max-width: 100%;
 	}
 
-/* Positioning
-	 Flexbox-enabled styles below */
+/* Flexbox style */
   .row1 {
+    height: 12em;
+    padding-right: 1.2em;
+    padding-left: 1.2em;
     position: static;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end
   }
+  .name {
+    font-size: 1.44em;
+  }
   .buttons {
-    background-color: pink;
     display: flex;
     justify-content: flex-start;
     margin-left: auto;
   }
   .row2 {
-    background-color: white;
     padding-top: 1.44em;
     padding-right: 1.2em;
     padding-bottom: 1.44em;
     display: flex;
     justify-content: space-around;
   }
+
+  /*table style/set column */
   .row3 {
     display:table;
     width:100%;
     table-layout:fixed;
+    vertical-align: top;
   }
   .head1 {
     display: table-cell;
     text-align: right;
+    padding-right: 1.2em;
   }
   .p1 {
     display: table-cell;
+    width: 66.6666666666666%;
+    padding-right: 12em;
   }
   .row4 {
     display:table;
@@ -173,8 +171,11 @@ img {
   .head2 {
     display: table-cell;
     text-align: right;
+    padding-right: 1.2em;
   }
   .p2 {
     display: table-cell;
+    width: 66.6666666666666%;
+    padding-right: 12em;
   }
 }
