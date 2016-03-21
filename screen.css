@@ -126,6 +126,8 @@ img {
 	}  
 	.img2 {
   	width: 30%;
+    display: block;
+    height: 18.75%; /*16:10*/
     max-width: 100%;
 	}
 
@@ -150,5 +152,29 @@ img {
     padding-bottom: 1.44em;
     display: flex;
     justify-content: space-around;
+  }
+  .row3 {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+  }
+  .head1 {
+    display: table-cell;
+    text-align: right;
+  }
+  .p1 {
+    display: table-cell;
+  }
+  .row4 {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+  }
+  .head2 {
+    display: table-cell;
+    text-align: right;
+  }
+  .p2 {
+    display: table-cell;
   }
 }
