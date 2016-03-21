@@ -57,8 +57,7 @@ p {
 
 h1 {
   color: #E6EBE0;
-  font-family: "Goudy Bookletter 1911", sans-serif;
-  font-weight: bold;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.728em; /* 34.56px / 20px */
   line-height: 1.6666666666667em; /* 28.8px * 2 / 34.56px */
   padding-bottom: 0em; /* Closer */
@@ -68,8 +67,7 @@ h1 {
 
 h2 {
   color: #E6EBE0;
-  font-family: "Goudy Bookletter 1911", sans-serif;
-  font-weight: bold;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.44em; /* 28.8px / 20px */
   line-height: 1.728em; /* 34.56px / 20px */
   padding-left: 0.75em; 
@@ -197,6 +195,7 @@ img {
     justify-content: center;
     align-items: center;
     padding-top: 1.44em;
+    padding-bottom: 0;
   }
   .name {
     font-size: 75%;
@@ -206,7 +205,7 @@ img {
     margin-right: auto;
   }
   .row2 {
-    padding-top: 1.44em;
+    padding-top: 0em;
     padding-right: 0;
     padding-bottom: 1.44em;
     display: flex;
@@ -221,6 +220,7 @@ img {
   }
   .head1 {
     text-align: left;
+    font-size: 1em;
   }
   .p1 {
     width: 100%;
@@ -232,6 +232,7 @@ img {
   }
   .head2 {
     text-align: left;
+    font-size: 1em;
   }
   .p2 {
     width: 100%;
@@ -239,3 +240,8 @@ img {
   }
 }  
 
+/* kill the margin which drives me crazy on the right of mobile screen */  
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
