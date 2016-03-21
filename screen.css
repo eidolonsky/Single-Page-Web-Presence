@@ -189,7 +189,7 @@ img {
 
   /* Flexbox style */
   .row1 {
-    height: 12em;
+    padding-top:1.2em;
     padding-right: 1.2em;
     padding-left: 1.2em;
     padding-bottom: 1.2em;
@@ -200,6 +200,7 @@ img {
   }
   .name {
     font-size: 1.44em;
+    padding-left: 1.2em;
     vertical-align: bottom;
   }
   .buttons {
